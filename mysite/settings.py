@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',   # add my app into this list! 这里是需要加的东西
+    'translator',   # add my app into this list! 这里是需要加的东西
 ]
 
 MIDDLEWARE = [
