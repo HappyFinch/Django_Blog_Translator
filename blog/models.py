@@ -8,7 +8,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)
-    slug = models.SlugField(max_length=200,unique=True)
+    slug = models.SlugField(max_length=200,unique=True,null=False)
     author = models.ForeignKey(to = User,on_delete=models.CASCADE)
     status = models.IntegerField(choices=STATUS,default=0)
 
